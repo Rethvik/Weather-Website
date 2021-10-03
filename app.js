@@ -1,3 +1,5 @@
+//   https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+
 const form = document.querySelector('.weather-form')
 const wrongSearch = document.querySelector('.wrong-search')
 const place = document.querySelector('#placeName');
