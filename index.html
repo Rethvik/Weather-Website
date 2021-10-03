@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h1 id="title">WEATHER TELECAST</h1>
+    
+    <div class="container">
+        <div class="main-weather">
+            <form class="weather-form">
+                <label for="place">Enter Place:</label>
+                <input type="text" id="place" name="q" placeholder="city name">
+                <button id="search-button">Search</button>
+            </form>
+            <div class="wrong-search">
+                <h3>Wrong place</h3>
+            </div>
+            
+            <div class="main-content">
+                <div id="weather-icon"></div>
+                <h1><span id="temp">- -</span><sup id="symbol">&#176;</sup>C</h1>
+                <h2><span id="placeName">- -</span> <span id="country"></span></h2>
+            </div>
+        </div>
+        <div class="weather-details">
+            <div class="sky-section">
+                <h3 class="sky">Weather</h3>
+                <p><span class="sky-cond">- -</span></p>
+            </div>
+            <div class="cloudy-section">
+                <h3 class="cloudy">Cloudy</h3>
+                <p><span class="cloudy-percentage">- -</span><span percent="percent">%</span></p>
+            </div>
+            <div class="visibility-section">
+                <h3 class="visibility">Visibility</h3>
+                <p><span class="visibility-km">- -</span><span id="km">km</span></p>
+            </div>
+            <div class="humidity-section">
+                <h3 class="humidity">Humidity</h3>
+                <p><span class="humidity-percentage">- -</span><span class="percent">%</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
